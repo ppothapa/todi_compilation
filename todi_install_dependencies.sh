@@ -7,7 +7,7 @@ source ./todi_env.sh
 
 
 # Default branches if not provided
-icon_branch="grace-hopper"
+icon_branch="exclaim-for-jsbach-toedi_crc"
 icon4py_branch="v0.0.11"
 gt4py_branch="icon4py_20240521"
 gridtools_branch="v2.3.4"
