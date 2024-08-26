@@ -52,7 +52,7 @@ pushd icon-exclaim
  LOC_ICON4PY_TOOLS=$LOC_ICON4PY_TOOLS \
  LOC_ICON4PY_BIN=$LOC_ICON4PY_BIN \
  LOC_GRIDTOOLS=$LOC_GRIDTOOLS \
- ./../config/cscs/todi_nospack.dsl.nvidia_PPK 
+ ./../config/cscs/todi_nospack.dsl.nvidia_PPK -disable-rte-rrtmgp --enable-liskov=substitute --disable-liskov-fused 
 
 make -j20
 
