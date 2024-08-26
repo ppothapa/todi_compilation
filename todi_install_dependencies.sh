@@ -38,6 +38,7 @@ done
 
 git clone -b $icon_branch git@github.com:C2SM/icon-exclaim.git
 git clone -b $icon4py_branch git@github.com:C2SM/icon4py.git
+cp -r base-requirements.txt icon4py  
 git clone -b $gt4py_branch https://github.com/GridTools/gt4py.git
 git clone -b $gridtools_branch https://github.com/GridTools/gridtools.git
 
