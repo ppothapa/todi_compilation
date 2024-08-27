@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source todi_env.sh
+source ./todi_env.sh
 
 set -eu
 
@@ -17,8 +17,7 @@ uenv_view_path="/user-environment/env/icon/"
 
 
 # Requirements
-#XML2_ROOT="${uenv_view_path}"
-XML2_ROOT="/user-environment/linux-sles15-neoverse_v2/gcc-12.3.0/libxml2-2.10.3-7bjhm4gkxtzf4hfmugjv2ivcplisiwf7"
+XML2_ROOT="${uenv_view_path}"
 XML2_LIBS='-lxml2'
 
 if [ -z "${SERIALBOX2_ROOT+x}" ]; then
@@ -50,8 +49,7 @@ STDCPP_LIBS='-c++libs'
 
 ################################################################################
 
-#BUILD_ENV=". \"${SCRIPT_DIR}/module_switcher\"; module use /user-environment/modules; switch_for_module ${MODULES}; export LD_LIBRARY_PATH=\"${XML2_ROOT}/lib:\${LD_LIBRARY_PATH}\"; export CC=mpicc; export FC=mpif90; export CXX=mpicxx;"
-BUILD_ENV="source ${uenv_view_path}/activate.sh; export LD_LIBRARY_PATH=\"/user-environment/env/icon/lib64:\${LD_LIBRARY_PATH}\"; export LD_LIBRARY_PATH=\"/user-environment/linux-sles15-neoverse_v2/gcc-12.3.0/libxml2-2.10.3-7bjhm4gkxtzf4hfmugjv2ivcplisiwf7/lib:\${LD_LIBRARY_PATH}\";"
+BUILD_ENV="source ${uenv_view_path}/activate.sh; export LD_LIBRARY_PATH=\"/user-environment/env/icon/lib64:\${LD_LIBRARY_PATH}\";"
 
 
 # We need some of the environment variables set by the modules now:
