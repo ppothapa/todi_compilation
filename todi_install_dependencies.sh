@@ -7,7 +7,7 @@ source ./todi_env.sh
 
 
 # Default branches if not provided
-icon_branch="grace-hopper_plev"
+icon_branch="grace_hopper_plev"
 icon4py_branch="v0.0.11"
 gt4py_branch="icon4py_20240521"
 gridtools_branch="v2.3.4"
